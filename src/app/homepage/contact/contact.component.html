@@ -1,0 +1,128 @@
+<div class="backgroundContainer">
+  <section class="contactContainer">
+    <h2>{{ "contact.title" | translate }}</h2>
+    <main>
+      <div class="leftContainer">
+        <h3>{{ "contact.subtitle" | translate }}</h3>
+        <p>
+          {{ "contact.text" | translate }}
+        </p>
+        <span class="callToAction"
+          >{{ "contact.question" | translate }} <b>{{ "contact.callToAction" | translate }}</b></span
+        >
+        <a class="above" href="#aboveTheFold"></a>
+      </div>
+      <div class="rightContainer">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+          <div class="inputContainer">
+            <input
+              [(ngModel)]="contactData.name"
+              #name="ngModel"
+              type="text"
+              id="name"
+              name="name"
+              [placeholder]="'contact.name' | translate"
+              required
+            />
+            @if (!name.valid && name.touched && !name.disabled) {
+              <img class="errorImage" src="./../../../assets/img/contact/error.svg" alt="">
+              <span class="required">{{ "contact.errorName" | translate }}</span>
+              } 
+            @if (name.valid && name.touched && !name.disabled) {
+              <img class="validImage" src="./../../../assets/img/contact/valid.svg" alt="">
+              }
+          </div>
+
+          <div class="inputContainer">
+            <input
+              [(ngModel)]="contactData.email"
+              #email="ngModel"
+              type="email"
+              id="email"
+              name="email"
+              [placeholder]="'contact.email' | translate"
+              required
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            />
+            @if (!email.valid && email.touched && !email.disabled) {
+              <img class="errorImage" src="./../../../assets/img/contact/error.svg" alt="">
+              <span class="required">{{ "contact.errorEmail" | translate }}</span>
+              }
+            @if (email.valid && email.touched && !email.disabled) {
+              <img class="validImage" src="./../../../assets/img/contact/valid.svg" alt="">
+              }
+          </div>
+
+          <div class="inputContainer">
+            <textarea
+              #message="ngModel"
+              minlength="4"
+              [(ngModel)]="contactData.message"
+              id="message"
+              name="message"
+              [placeholder]="'contact.message' | translate"
+              required
+            >
+            </textarea>
+            @if (!message.valid && message.touched && !message.disabled) {
+              <img class="errorImage" src="./../../../assets/img/contact/error.svg" alt="">
+              <span class="required2">{{ "contact.errorMessage" | translate }}</span>
+            }
+            @if (message.valid && message.touched && !message.disabled) {
+              <img class="validImage" src="./../../../assets/img/contact/valid.svg" alt="">
+            }
+          </div>
+
+          <div class="privacyPolicy">
+            <div [ngClass]="{'clickedCheckbox': checkbox, 'checkbox': !checkbox}" (click)="toggleCheckbox()" required></div>
+            <span
+              >{{ "contact.textPart1" | translate }} <a [routerLink]="[ '/privacyPolicy' ]">{{ "contact.privacyPolicy" | translate }}</a> {{ "contact.textPart2" | translate }}
+            
+              </span
+            >
+          </div>
+
+          
+          <button class="disabled-button" [ngClass]="{
+            'enabled-button':
+            checkbox &&
+            name.valid &&
+            name.touched &&
+            !name.disabled &&
+            email.valid &&
+            email.touched &&
+            !email.disabled &&
+            message.valid &&
+            message.touched &&
+            !message.disabled}" type="submit">{{buttonName | translate}}
+          </button>
+
+
+        </form>
+      </div>
+    </main>
+
+    @if(isSubmitted) {
+      <div class="pop-up-contact-container">
+          <div class="feedback-container">
+              <span>{{ "contact.feedback" | translate }}<br> {{ "contact.submitted" | translate }}</span>
+          </div>
+      </div>
+      }
+
+    <div>
+      <img
+        class="ellipse1"
+        src="./assets/img/contact/ballMiddle.svg"
+        alt="middle ball"
+      />
+    </div>
+    <div>
+      <img
+        class="ellipse2"
+        src="./assets/img/contact/ballSmall.svg"
+        alt="small ball"
+      />
+    </div>
+  </section>
+</div>

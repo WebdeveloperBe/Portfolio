@@ -1,0 +1,315 @@
+.backgroundContainer {
+  background: linear-gradient(179.99deg, #ffffff 12.89%, #eaf0ff 91.39%);
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+}
+
+h2 {
+  color: #5988ff;
+  font-family: "Baloo 2";
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 108px;
+  text-align: left;
+  width: 100%;
+  height: 108px;
+}
+
+main {
+  display: flex;
+  height: 504px;
+  gap: 100px;
+  margin-top: 52px;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+h3 {
+  color: #5988ff;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+}
+
+p {
+  color: black;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+.above {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  cursor: pointer;
+  background-image: url("./../../../assets/img/contact/goUpButton.svg");
+
+  &:hover {
+    background-image: url("./../../../assets/img/contact/goUpButtonBlank.svg");
+  }
+}
+
+.callToAction {
+  color: #5988ff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 617px;
+
+  > .inputContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+    > input {
+      height: 50px;
+    }
+
+    > input,
+    textarea {
+      
+      border-radius: 10px;
+      border: 1px solid #5988ff;
+      padding: 15px 25px;
+      font-size: 16px;
+      font-family: "Montserrat";
+
+      &:hover {
+        outline: 2px solid #5988ff;
+      }
+    }
+  }
+
+  >button {
+    width: 181px;
+    font-size: 23px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-shadow: 5px 5px 15px 0px hsla(0, 0%, 0%, 0.149);
+    background-color: transparent;
+    z-index: 1;
+}
+
+}
+
+input {
+  height: 50px;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type="submit"] {
+  width: 181px;
+  height: 58px;
+  background-color: transparent;
+  padding: 15px 30px 15px 30px;
+  border: 2px solid #bbbbbb;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  color: #bbbbbb;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px 0px #00000026;
+}
+
+.errorImage {
+  position: absolute;
+  top: 12px;
+  right: 28px;
+}
+
+.validImage {
+  position: absolute;
+  top: 12px;
+  right: 28px;
+}
+
+.required {
+  color: red;
+  position: absolute;
+  top: 55px;
+}
+
+.required2 {
+  color: red;
+  position: absolute;
+  top: 204px;
+}
+
+.privacyPolicy {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    background-image: url("/assets/img/contact/checkboxBlank.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &:hover {
+      background-image: url("/assets/img/contact/checkboxBlankHover.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+    }
+  }
+
+  .clickedCheckbox {
+    width: 20px;
+    height: 20px;
+    background-image: url("/assets/img/contact/checkboxClicked.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &:hover {
+      background-image: url("/assets/img/contact/checkboxClickedHover.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #5988ff;
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
+
+.ellipse1 {
+  width: 204px;
+  height: 204px;
+  position: absolute;
+  bottom: 120px;
+  left: 280px;
+}
+
+.ellipse2 {
+  width: 73px;
+  height: 73px;
+  position: absolute;
+  bottom: 50px;
+  right: 80px;
+}
+
+.disabled-button {
+  color: #BBBBBB;
+  border: 2px solid #BBBBBB;
+}
+
+.enabled-button {
+  cursor: pointer;
+  color: #5988FF;
+  border: 2px solid #5988FF;
+
+  &:hover {
+      color: #FFFFFF;
+      transform: scale(1.1);
+      animation: gradient-animation 0.05s ease-in-out forwards;
+  }
+}
+
+.pop-up-contact-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.feedback-container {
+  width: 750px;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./../../../assets/img/contact/ball.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  >span {
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      font-weight: 900;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  main {
+      flex-direction: column;
+      gap: 40px;
+      height: 100%;
+  }
+  .ellipse1{
+    z-index: 1;
+    left: 220px;
+    bottom: 396px;
+    width: 101px;
+    height: 101px;
+  }
+  .ellipse2 {
+    width: 39px;
+    height: 39px;
+  }
+  form{
+    width: 100%;
+    gap: 30px;
+  }
+  input, textarea{
+    z-index: 10;
+  }
+}

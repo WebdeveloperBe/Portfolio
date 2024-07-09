@@ -1,0 +1,82 @@
+.myWork {
+    max-width: 1440px;
+    padding: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h2 {
+    color: #5988FF;
+    font-family: 'Baloo 2';
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 900;
+}
+
+.myWorkSubtitle {
+    color: black;
+    font-family: 'Montserrat';   
+    font-size: 23px;
+    font-weight: 400;
+    width: 673px;
+}
+
+.background0 {
+    width: 109px;
+    height: 109px;
+    position: absolute;
+    top: 50px;
+    left: 655px;
+}
+
+.background1 {
+    width: 183px;
+    height: 183px;
+    position: absolute;
+    top: 220px;
+    right: 60px;
+    z-index: -1;
+}
+
+.background2 {
+    width: 393px;
+    height: 393px;
+    position: absolute;
+    top: 560px;
+    left: -200px;
+}
+
+.background3 {
+    width: 652px;
+    height: 652px;
+    position: absolute;
+    top: 820px;
+    right: -160px;
+}
+
+.background4 {
+    width: 51px;
+    height: 51px;
+    position: absolute;
+    top: 1200px;
+    left: 100px;
+}
+
+.background5 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    bottom: 20px;
+    left: 620px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .myWorkSubtitle {
+        width: 100%;
+    }
+   
+}

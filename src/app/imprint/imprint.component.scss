@@ -1,0 +1,45 @@
+section {
+    height: calc(100vh - 304px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#ffffff, #eaf0ff) no-repeat;
+   
+
+    >div {
+        position: relative;
+        bottom: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        font-family: 'Montserrat';
+        max-width: 1440px;
+        background: 
+        url("./../../assets/img/imprint/ballMiddle.svg") no-repeat 26% 32%,
+        url("./../../assets/img/imprint/ballSmall.svg") no-repeat 69% 69%;
+
+        img {
+            position: absolute;
+            top: -103px;
+            left: 96px;
+        }
+
+        h2 {
+            
+            font-size: 80px;
+            font-weight: 700;
+            color: #5988FF;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: black;
+        }
+    }
+}

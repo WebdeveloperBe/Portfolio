@@ -1,0 +1,52 @@
+{
+    "header": {
+        "aboutMe": "About Me",
+        "skillSet": "Skill Set",
+        "myWork": "My work",
+        "contact": "Contact"
+    },
+    "aboveTheFold": {
+        "greeting": "Hello! I am Benedikt",
+        "frontend": "FRONTEND",
+        "developer": "DEVELOPER",
+        "scroll": "SCROLL"
+    },
+    "aboutMe": {
+        "title": "Let's work together",
+        "subtitle": "I am a Frontend developer based in Paderborn, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
+        "subtitle2": "If you think I’d be a good match for your projects, contact me!",
+        "button": "Send a message"
+    },
+    "skillSet": {
+        "title": "Skill set"
+    },
+    "myWork": {
+        "title": "My work",
+        "subtitle": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "joinText": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "polloLocoText": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "pokedexText": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Got a problem to solve?",
+        "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "question": "Need a Frontend developer?",
+        "callToAction": "Contact me!",
+        "name": "Your name",
+        "errorName": "Your name is required.",
+        "email": "Your email",
+        "errorEmail": "Your email is required.",
+        "message": "Your message",
+        "errorMessage": "Your message is empty.",
+        "privacyPolicy": "privacy policy",
+        "textPart1": "I've read the ",
+        "textPart2": "and agree to the processing of my data as outlined.",
+        "button": "Say hello ;)",
+        "feedback": "Thank you very much!",
+        "submitted": "Your message has been successfully submitted."
+    },
+    "footer": {
+        "link": "Imprint"
+    }
+}

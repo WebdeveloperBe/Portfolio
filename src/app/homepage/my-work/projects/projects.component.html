@@ -1,0 +1,13 @@
+
+    <div [ngClass]="{ 'reverse-element': index % 2 !== 0 }" class="renderProject">
+        <div><img class="image" src="{{ singlepost.image }}" alt=""></div>
+        <div [ngClass]="{ 'reverse-content': index % 2 !== 0 }" class="content">
+            <h3>{{ singlepost.title }}</h3>
+            <div class="languages">{{ singlepost.languages }}</div>
+            <div class="description">{{ singlepost.description | translate }}</div>
+            <div class="buttons">
+            <a class="btn live" href="{{ singlepost.url }}" target="_blank">Live Test</a>
+            <a class="btn" href="{{ singlepost.url2 }}" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>

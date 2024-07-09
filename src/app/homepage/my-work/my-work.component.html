@@ -1,0 +1,14 @@
+<section class="myWork"> 
+
+    @for (img of [0,1,2,3,4,5]; track $index) {
+        <img class="background{{img}}" src="./assets/img/myWork/ball.svg" alt="ball">
+        }
+
+    <h2>{{ "myWork.title" | translate }}</h2>
+    <div class="myWorkSubtitle">{{ "myWork.subtitle" | translate }}</div>
+
+    @for (post of posts; track $index){
+        <app-projects [singlepost]="post" [index]="$index"></app-projects>
+    }
+ 
+</section>

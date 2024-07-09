@@ -1,0 +1,52 @@
+{
+    "header": {
+        "aboutMe": "Über mich",
+        "skillSet": "Kenntnisse",
+        "myWork": "Meine Projekte",
+        "contact": "Kontakt"
+    },
+    "aboveTheFold": {
+        "greeting": "Hallo! Ich bin Benedikt",
+        "frontend": "FRONTEND",
+        "developer": "ENTWICKLER",
+        "scroll": "SCROLLEN"
+    },
+    "aboutMe": {
+        "title": "Lassen Sie uns zusammen arbeiten",
+        "subtitle": "Ich bin ein Frontend-Entwickler mit Sitz in Paderborn. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Entwickler fortzusetzen und eine Stelle als Junior-Webentwickler zu finden.",
+        "subtitle2": "Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+        "button": "Nachricht"
+    },
+    "skillSet": {
+        "title": "Kenntnisse"
+    },
+    "myWork": {
+        "title": "Meine Projekte",
+        "subtitle": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "joinText": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "polloLocoText": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+        "pokedexText": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
+    },
+    "contact": {
+        "title": "Kontakt",
+        "subtitle": "Sie müssen ein Problem lösen?",
+        "text": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "question": "Sie brauchen einen Frontend-Entwickler?",
+        "callToAction": "Kontaktieren Sie mich!",
+        "name": "Ihr Name",
+        "errorName": "Ihr Name ist erforderlich.",
+        "email": "Ihre Email",
+        "errorEmail": "Ihre E-Mail ist erforderlich.",
+        "message": "Ihre Nachricht",
+        "errorMessage": "Ihre Nachricht ist leer.",
+        "privacyPolicy": "Datenschutzrichtlinie",
+        "textPart1": "Ich habe die ",
+        "textPart2": "gelesen und erkläre mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
+        "button": "Sag hallo ;)",
+        "feedback": "Herzlichen Dank!",
+        "submitted": "Ihre Nachricht wurde erfolgreich gesendet."
+    },
+    "footer": {
+        "link": "Impressum"
+    }
+}

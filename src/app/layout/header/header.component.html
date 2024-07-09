@@ -1,0 +1,45 @@
+<header>
+
+    <div>
+        <img class="logo" src="./assets/img/header/logo.svg" alt="Header-Icon">
+        
+    </div>
+
+    <nav>
+
+        <div class="links">
+            <a class="link" name="About me" href="#aboutMe" (click)="onLinkClick($event)">{{ "header.aboutMe" | translate }}</a>
+            <a class="link" name="Skill set" href="#skillSet" (click)="onLinkClick($event)">{{ "header.skillSet" | translate }}</a>
+            <a class="link" name="My work" href="#myWork" (click)="onLinkClick($event)">{{ "header.myWork" | translate }}</a>
+        </div>
+
+        <div class="language">
+            <p>
+                <a (click)="translate.switchLanguage('en')">EN</a>|<a (click)="translate.switchLanguage('de')">DE</a>
+            </p>
+        </div>
+
+    </nav>
+
+    <img (click)="toggleMenu()"  class="burger" src="./../../../assets/img/header/burger.svg" alt="burger menu">
+    
+
+    <div class="hiddenMenu" [class.slide-from-right]="hiddenMenuIsAktive == true" [ngStyle]="{'overflow-x':hiddenMenuIsAktive?'none':'hidden'}">
+
+        <div class="hiddenHeader">
+            <img class="logoBlue"  src="./assets/img/header/logoBlue.svg" alt="Header-Icon">
+            <img class="closePopupMenu" (click)="toggleMenu()" src="./../../../assets/img/header/close.svg" alt="close">
+        </div>
+
+        <div class="hiddenLinks">
+            <a class="link" name="About me" href="#aboutMe" (click)="toggleMenu()" (click)="onLinkClick($event)">{{ "header.aboutMe" | translate }}</a>
+            <a class="link" name="Skill set" href="#skillSet" (click)="toggleMenu()" (click)="onLinkClick($event)">{{ "header.skillSet" | translate }}</a>
+            <a class="link" name="My work" href="#myWork" (click)="toggleMenu()" (click)="onLinkClick($event)">{{ "header.myWork" | translate }}</a>
+            <a class="link" name="Contact" href="#contact" (click)="toggleMenu()" (click)="onLinkClick($event)">{{ "header.contact" | translate }}</a>
+            <p><a class="english" (click)="translate.switchLanguage('en')">EN</a>|<a class="german" (click)="translate.switchLanguage('de')">DE</a></p>
+        </div>
+
+    </div>
+
+
+</header>

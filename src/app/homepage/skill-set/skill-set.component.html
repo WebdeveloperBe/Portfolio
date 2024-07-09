@@ -1,0 +1,10 @@
+<div class="backgroundContainer">
+    <section class="skillSet">
+        <h2>{{ "skillSet.title" | translate }}</h2>
+        <div class="wrapper">
+            @for (post of posts; track $index){
+                <app-skills [singlepost]="post"></app-skills>
+            }
+        </div>        
+    </section>
+</div>

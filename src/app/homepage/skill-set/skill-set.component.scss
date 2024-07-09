@@ -1,0 +1,37 @@
+.backgroundContainer {
+    background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
+}
+
+.skillSet {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h2{
+    color: white;
+    font-family: 'Baloo 2';
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 96px;
+    letter-spacing: 0.01em;
+    padding-bottom: 20px;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 160px;
+}
